@@ -121,7 +121,7 @@ const HamburgerMenu = () => {
               </span>
             </li>
             <li className="header__menu-item header__menu-item__mobile">
-              <a onClick={() => setIsOpen(!isOpen)} className="header__menu-link header__menu-item_proposal proposal__mobile" href="#form">Оформить заявку</a>
+              <a onClick={() => setIsOpen(!isOpen)} className="header__menu-link header__menu-item_proposal proposal__mobile" href="#form">Оформить<br/>заявку</a>
             </li>
           </ul>
         </nav>
