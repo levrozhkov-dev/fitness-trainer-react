@@ -1,0 +1,237 @@
+.pricing-block {
+  width: 100%;
+  padding: 80px 20px 60px;
+  background: linear-gradient(to bottom,
+      var(--main-background) 0%,
+      rgba(27, 27, 27, 0.6) 50%,
+      var(--main-background) 100%),
+    url(../../assets/pricing_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing-block__main {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+}
+
+.pricing-cards {
+  margin: 40px 0;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 40px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 300px;
+  padding: 20px;
+  background: var(--pricing-cards-color);
+  transition: transform 0.8s ease-out;
+}
+
+.plan-icon {
+  align-self: start;
+  height: 30px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: start;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pricing-button {
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  color: var(--pricing-cards-color);
+  background-color: var(--main-elements);
+  cursor: pointer;
+}
+
+.plan-name {
+  font-family: Furore, 'Montserrat', Arial, sans-serif;
+  font-size: 28px;
+}
+
+.plan-price {
+  align-self: center;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.plan:hover {
+  transform: scale(1.03);
+}
+
+.plan-gym:nth-child(3) {
+  background: var(--gradient-background);
+  background-position: 0 100%;
+  background-size: auto 180%;
+  transition: 0.8s;
+}
+
+.plan-gym:nth-child(3):hover {
+  background-position: 0 0;
+}
+
+.plan-gym:nth-child(3) button {
+  color: var(--form-main-color);
+}
+
+.plan-online:nth-child(2) {
+  background: var(--gradient-background);
+  background-position: 0 100%;
+  background-size: auto 180%;
+  transition: 0.8s;
+}
+
+.plan-online:nth-child(2):hover {
+  background-position: 0 0;
+}
+
+.plan-online:nth-child(2) button {
+  color: var(--form-main-color);
+}
+
+.plan-gym:nth-child(3) .plan-price {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+}
+
+.plan-gym:nth-child(3) .plan-price::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 105%;
+  height: 3px;
+  background: var(--pricing-sale-color);
+  transform: translateY(-50%);
+}
+
+.plan-gym:nth-child(3) .plan-price::after {
+  content: "11999 ₽";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: var(--pricing-sale-color);
+}
+
+.plan-online:nth-child(2) .plan-price {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+}
+
+.plan-online:nth-child(2) .plan-price::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 105%;
+  height: 3px;
+  background: var(--pricing-sale-color);
+  transform: translateY(-50%);
+}
+
+.plan-online:nth-child(2) .plan-price::after {
+  content: "7999 ₽/мес.";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: var(--pricing-sale-color);
+}
+
+.plan .pulse-animation {
+  transition: 1s ease-out;
+}
+
+.plan:hover .pulse-animation {
+  transform: scale(1.3);
+  transform: rotate(10deg);
+}
+
+@media screen and (max-width: 1000px) {
+
+  .plans {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .plans {
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 12px;
+  }
+
+  .plan {
+    gap: 5px;
+    padding: 15px;
+  }
+
+  .plan-gym {
+    width: 150px;
+    height: 270px;
+  }
+
+  .plan-online {
+    width: 150px;
+    height: 350px;
+  }
+
+  .plan-icon {
+    height: 15px;
+  }
+
+  .plan-name {
+    font-size: 18px;
+    word-wrap: break-word;
+  }
+
+  .plan-price {
+    font-size: 16px;
+  }
+
+  .features {
+    gap: 8px;
+  }
+
+  .plan-gym:nth-child(3) .plan-price::after {
+    top: 10px;
+  }
+
+  .plan-gym:nth-child(3) .plan-price {
+    top: -5px;
+  }
+
+  .plan-online:nth-child(2) .plan-price::after {
+    top: 10px;
+  }
+
+  .plan-online:nth-child(2) .plan-price {
+    top: -5px;
+  }
+
+}

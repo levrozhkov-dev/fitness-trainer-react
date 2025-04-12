@@ -1,0 +1,157 @@
+.format-block {
+  width: 100%;
+  padding: 60px 20px 0;
+  background-color: var(--main-background);
+}
+
+.format-block__main {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.format-block__main h2 {
+  text-align: end;
+}
+
+.format-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: min(800px, 100%);
+  height: 100%;
+  text-shadow: 0 4px 14px rgba(0, 0, 0);
+}
+
+.form-swiper-slide-two {
+  display: flex;
+  justify-content: end;
+}
+
+.format-text__title {
+  display: flex;
+  gap: 15px;
+}
+
+.title-slide-two {
+  justify-content: end;
+  text-align: end;
+}
+
+.format-text__title__string__one {
+  margin-bottom: 10px;
+  color: var(--main-elements);
+  font-family: Montserrat;
+}
+
+.format-text__title__string__two {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.format-list {
+  margin-left: 50px;
+  list-style-type: none;
+}
+
+.format-list__item {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.format-list__item::before {
+  content: "✓";
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.format-list__item__span {
+  font-weight: 600;
+}
+
+.format-text__subtitle {
+  font-weight: 600;
+}
+
+.format-swiper {
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2100px;
+  height: 100%;
+  background-image: url(../../assets/format_background.png);
+  background-position: left;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+
+  .format-swiper {
+    height: 750px;
+  }
+
+}
+
+@media screen and (max-width: 449px) {
+
+  .format-swiper {
+    height: 800px;
+  }
+
+  .format-text {
+    justify-content: start;
+    gap: 40px;
+    font-size: 15px;
+  }
+
+  .format-text__title {
+    flex-direction: column;
+    order: -1;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .format-text__title__string__one {
+    font-size: 20px;
+  }
+
+  .format-text__title__string__two {
+    font-size: 16px;
+  }
+
+  .title-slide-two img {
+    order: -1;
+  }
+
+  .format-text__title img {
+    width: 60px;
+  }
+
+  .format-swiper {
+    padding: 30px;
+  }
+
+  .format-text__subtitle {
+    order: 1;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .format-swiper {
+    height: 1200px;
+  }
+
+}

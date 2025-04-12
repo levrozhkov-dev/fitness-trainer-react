@@ -1,0 +1,160 @@
+.welcome-block {
+    position: relative;
+    width: 100%;
+    padding-top: 140px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    background-color: var(--main-background);
+}
+
+.welcome-block__trainer {
+    max-width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    text-align: left;
+    background-image: url(../../assets/Frame-img-2.png);
+    background-size: cover;
+}
+
+.welcome-block__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 100%;
+    padding: 70px 20px;
+    font-size: 25px;
+}
+
+.welcome-block__title {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: Furore, 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+
+.welcome-block__title-part {
+    display: block;
+    font-size: 40px;
+}
+
+.part-special {
+    color: transparent;
+    font-size: 45px;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: var(--main-elements);
+}
+
+.welcome-block__text {
+    text-align: right;
+}
+
+.welcome-block__text-part {
+    display: block;
+}
+
+.figures {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.figures-number {
+    font-family: Furore;
+    font-size: 40px;
+    line-height: 60%;
+    text-align: center;
+}
+
+.welcome-block__button-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-block__button {
+    border: 1px solid var(--main-elements);
+    padding: 15px 20px;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.welcome-block__button:hover {
+    border-color: var(--main-elements-hover);
+    color: var(--main-elements-hover);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.start-button {
+    border: 3px solid;
+    border-image: var(--gradient-background) 1;
+    color: transparent;
+    font-weight: bold;
+    background: var(--gradient-background);
+    background-clip: text;
+}
+
+.start-button:hover {
+    color: var(--main-elements);
+    background: var(--gradient-background);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.above-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+    .welcome-block {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .overlay {
+        display: block;
+    }
+
+    .welcome-block__trainer {
+        background-position-x: calc(100vw + 150px);
+    }
+
+    .welcome-block__title {
+        gap: 20px;
+    }
+
+    .welcome-block__title-part {
+        font-size: 30px;
+    }
+
+    .part-special {
+        font-size: 35px;
+    }
+
+    .welcome-block__description {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .welcome-block__button-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        font-size: 18px;
+    }
+
+}

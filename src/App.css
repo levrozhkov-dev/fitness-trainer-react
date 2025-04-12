@@ -1,0 +1,32 @@
+:root {
+  --main-elements: #fff;
+  --main-elements-hover: #cbcbcb;
+  --main-background: #1b1b1b;
+  --additional-background: #414347;
+  --header-background: #ffa739;
+  --hamburger-background: #4a4b4f;
+  --hamburger-background-list: #252527;
+  --pricing-cards-color: #666;
+  --pricing-sale-color: #de0000;
+  --form-main-color: #ff7400;
+  --form-hover-color: #ff8533;
+  --form-background: #0c0c0c;
+  --form-input-background: #111;
+  --form-input-border: #444;
+  --form-input-error: #ff3333;
+  --gradient-background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --gradient-background-reverse: linear-gradient(#ffa739 1.14%, #fa5042 100.75%);
+}
+
+.App {
+  overflow: hidden;
+  color: var(--main-elements);
+  text-align: center;
+  background-color: var(--main-background);
+}
+
+.title__text-special {
+  color: transparent;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: var(--main-elements);
+}

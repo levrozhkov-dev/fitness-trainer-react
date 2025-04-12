@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  text-transform: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: Furore, 'Montserrat', Arial, sans-serif;
+  font-size: 28px;
+}
+
+h3 {
+  color: transparent;
+  font-family: Furore, 'Montserrat', Arial, sans-serif;
+  font-size: 28px;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white;
+}
+
+a {
+  color: inherit;
+}
+
+@font-face {
+  font-family: Furore;
+  src: url(fonts/Furore.woff) format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat-ExtraBold.woff2) format('woff2');
+  font-weight: bold;
+  font-display: swap;
+}
