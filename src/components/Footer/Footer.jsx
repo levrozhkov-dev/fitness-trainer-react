@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="footer-column">
           <h3 className="footer-title">Соцсети</h3>
           <div className="social-links">
-            <a href="https://t.me/andreybazarinr" rel="noopener noreferrer" target="_blank">
+            <a href="https://t.me/andreybazarin" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon icon={faTelegram} className="social-icon" />
             </a>
             <a href="https://vk.com/andreybazarin" rel="noopener noreferrer" target="_blank">

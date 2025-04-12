@@ -123,7 +123,7 @@ const PlansCards = () => {
                                   <p className="card-list__item">
                                     Мне подойдет?
                                   </p>
-                                  <img src={card_arrow_down} />
+                                  <img src={card_arrow_down} alt="" />
                                 </button>
                               </div>
                             </div>
@@ -150,7 +150,7 @@ const PlansCards = () => {
                                 onClick={() => goToPrevSlide(index)}
                               >
                                 <p className="card-list__item">О программе</p>
-                                <img src={card_arrow_up} />
+                                <img src={card_arrow_up} alt="" />
                               </button>
                             </div>
                             <ul className="card-list list-two">
@@ -182,6 +182,7 @@ const PlansCards = () => {
                             <a
                               className="card-question"
                               href="https://t.me/andreybazarin"
+                              rel="noopener noreferrer"
                               target="_blank"
                             >
                               <button className="card-question-button">
