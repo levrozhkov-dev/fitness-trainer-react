@@ -50,7 +50,7 @@ a {
   font-family: Furore;
   src: url(fonts/Furore.woff) format('woff');
   font-weight: normal;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {

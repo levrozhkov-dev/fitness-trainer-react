@@ -34,9 +34,10 @@ const Header = () => {
           isScrolled && "header__container-scrolled"
         }`}
       >
-        <a className="header-logo" href="/">
+        <a className="header-logo" href="/fitness-trainer-react/">
           <img
             className="header__logo-image"
+            draggable="false"
             src={isShortDesktop ? logo2 : logo1}
             alt="логотип"
           />

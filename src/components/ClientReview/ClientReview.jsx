@@ -92,6 +92,7 @@ const ClientReview = () => {
               <ReactCompareSliderImage
                 style={{ width: "200px", height: "300px" }}
                 src={reviewData[selected].image_before}
+                draggable="false"
                 alt="фото до"
               />
             }
@@ -99,6 +100,7 @@ const ClientReview = () => {
               <ReactCompareSliderImage
                 style={{ width: "200px", height: "300px" }}
                 src={reviewData[selected].image_after}
+                draggable="false"
                 alt="фото после"
               />
             }

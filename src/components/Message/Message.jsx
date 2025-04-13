@@ -45,7 +45,7 @@ const Message = () => {
             Хочу сделать первый шаг
           </div>
           <a href="#form">
-            <img src={message_icon} alt="отправка сообщения" />
+            <img src={message_icon} draggable="false" alt="отправка сообщения" />
           </a>
         </div>
       </div>
