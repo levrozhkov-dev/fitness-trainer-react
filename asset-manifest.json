@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fitness-trainer-react/static/css/main.91fc3a84.css",
-    "main.js": "/fitness-trainer-react/static/js/main.3649a22d.js",
+    "main.js": "/fitness-trainer-react/static/js/main.ecdd7da5.js",
     "static/media/format_background.png": "/fitness-trainer-react/static/media/format_background.f0b01ff579af13a53de4.png",
     "static/media/Frame-img-2.png": "/fitness-trainer-react/static/media/Frame-img-2.211910200a694b8fff11.png",
     "static/media/colorkit.png": "/fitness-trainer-react/static/media/colorkit.ea816a51233dd7119cbf.png",
@@ -56,10 +56,10 @@
     "static/media/card_arrow_down.svg": "/fitness-trainer-react/static/media/card_arrow_down.e0c0b626c51a92f83abbfb80d7a2dd17.svg",
     "static/media/arrow-drop-down.svg": "/fitness-trainer-react/static/media/arrow-drop-down.8f2e7af546f71235fa6449930ac7c6f5.svg",
     "main.91fc3a84.css.map": "/fitness-trainer-react/static/css/main.91fc3a84.css.map",
-    "main.3649a22d.js.map": "/fitness-trainer-react/static/js/main.3649a22d.js.map"
+    "main.ecdd7da5.js.map": "/fitness-trainer-react/static/js/main.ecdd7da5.js.map"
   },
   "entrypoints": [
     "static/css/main.91fc3a84.css",
-    "static/js/main.3649a22d.js"
+    "static/js/main.ecdd7da5.js"
   ]
 }
