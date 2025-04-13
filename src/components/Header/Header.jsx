@@ -34,7 +34,7 @@ const Header = () => {
           isScrolled && "header__container-scrolled"
         }`}
       >
-        <a className="header-logo" href="/fitness-trainer-react/">
+        <a className="header-logo" href="#welcome-block">
           <img
             className="header__logo-image"
             draggable="false"

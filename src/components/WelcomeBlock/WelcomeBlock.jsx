@@ -4,7 +4,7 @@ import "./WelcomeBlock.css";
 
 const WelcomeBlock = () => {
   return (
-    <section className="welcome-block">
+    <section className="welcome-block" id="welcome-block">
       <div className="welcome-block__trainer above-overlay">
         <div class="overlay"></div>
         <div className="welcome-block__description">
