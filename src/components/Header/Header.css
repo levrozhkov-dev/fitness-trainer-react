@@ -122,6 +122,10 @@
   padding-top: 20px;
 }
 
+.dropdown__list:has(.dropdown__menu-link:focus-visible) {
+  opacity: 1;
+}
+
 .dropdown__icon {
   width: 25px;
 }
@@ -131,7 +135,6 @@
 }
 
 .header__menu-link:hover .dropdown__list {
-  max-height: 300px;
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
